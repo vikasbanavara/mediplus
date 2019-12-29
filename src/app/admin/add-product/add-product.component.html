@@ -1,0 +1,50 @@
+<div class="col-md-6 col-md-offset-4 offset-3">
+    <h1 class="text-center">Add product</h1>
+<form [formGroup]="addProductForm" (ngSubmit)="addProduct()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="text" formControlName="name" class="form-control"   placeholder="Name">
+     </div>
+     
+     <div class="form-group">
+                <label for="exampleInputEmail1">Image URL</label>
+                <input type="text" formControlName="url" class="form-control"   placeholder="Image URL">
+      </div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">Type</label>
+        <select class="form-control" formControlName="type">
+            <option>Tablet</option>
+            <option>Powder</option>
+            <option>Sirup</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Quantity</label>
+      <input type="number" formControlName="quantity" class="form-control"  placeholder="Quantity">
+    </div>
+
+    <div class="form-group">
+            <label for="exampleInputPassword1">Cost</label>
+            <input type="number" formControlName="cost" class="form-control"  placeholder="Cost per pice">
+    </div>
+
+    <div class="form-group">
+            <label for="exampleInputPassword1">Discount</label>
+            <input type="number" formControlName="discount" class="form-control"  placeholder="Discount">
+    </div>
+    <div class="form-group">
+            <label for="exampleInputPassword1">Discount start date</label>
+            <input type="date" formControlName="startdate" class="form-control"  placeholder="Discount start date">
+    </div>
+    
+    <div class="form-group">
+                <label for="exampleInputPassword1">Discount end date</label>
+                <input type="date" formControlName="enddate" class="form-control"  placeholder="Discount end date">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
